@@ -1,0 +1,19 @@
+git clone https://github.com/Nur99/test_project.git
+pip install -r requirements.txt
+sudo -u postgres psql
+create database test
+create user test with password 'test';
+go back to terminal
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+
+I think there is no necessity to create api/test url;
+I unified them with modelviewset options;
+
+go to next url:
+http://127.0.0.1:8000/api/docs
+
+then choose key and create key;
+them create or update or get or list or destroy apps
